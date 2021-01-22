@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- App title and fragment titles -->
+    <string name="app_name">Seguimiento de Calidad de mi sueño</string>
+    <string name="sueno_seguidor_fragment">SueñoSeguidorFragment</string>
+    <string name="sueno_calidad_fragment">SueñoCalidadFragment</string>
+
+    <!-- Button labels -->
+    <string name="iniciar">Iniciar</string>
+    <string name="terminar">Detener</string>
+    <string name="limpiar">Limpiar</string>
+
+    <!-- contentDescription strings for quality icons -->
+    <string name="calidad_0">Calidad de Sueño 0</string>
+    <string name="calidad_1">Calidad de Sueño 1</string>
+    <string name="calidad_2">Calidad de Sueño 2</string>
+    <string name="calidad_3">Calidad de Sueño 3</string>
+    <string name="calidad_4">Calidad de Sueño 4</string>
+    <string name="calidad_5">Calidad de Sueño 5</string>
+
+    <!-- Output to TextView styled with a little HTML -->
+    <string name="titulo"><![CDATA[<h3>AQUI ESTAN TUS DATOS DEL SUEÑO</h3>]]></string>
+    <string name="iniciar_tiempo"><![CDATA[<b>Inicio:</b>]]></string>
+    <string name="terminar_tiempo"><![CDATA[<b>Fin:</b>]]></string>
+    <string name="calidad"><![CDATA[<b>Calidad:</b>]]></string>
+    <string name="horas_dormidas"><![CDATA[<b>Horas:Minutos:Segundos</b>]]></string>
+
+    <!-- Sleep quality strings -->
+    <string name="como_estuvo_el_sueno">¿Como estuvo tu sueño?</string>
+    <string name="cero_muy_mal">Muy mal</string>
+    <string name="uno_pobre">Pobre</string>
+    <string name="dos_mas_o_menos">Mas o menos</string>
+    <string name="tres_bien">Bien</string>
+    <string name="cuatro_muy_bien">Muy bien</string>
+    <string name="cinco_exelente">¡Excelente!</string>
+
+    <!-- Toast to play after Clear button has been pressed -->
+    <string name="mensaje_se_borro_tu_informacion">Toda tu informacion se borro para siempre :(.</string>
+
+    <string name="titulo_text">Sleep Results</string>
+    <string name="cerrar">Close</string>
+    <string name="minutos_length">%d minutes on %s</string>
+    <string name="horas_length">%d hours on %s</string>
+    <string name="segundos_length">%d seconds on %s</string>
+
+
+</resources>

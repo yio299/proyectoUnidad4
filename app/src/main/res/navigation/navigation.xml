@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/sueno_seguidor_fragment">
+
+    <fragment
+        android:id="@+id/sueno_seguidor_fragment"
+        android:name="com.example.android.trackmysleepquality.suenoseguidor.SuenoSeguidorFragment"
+        android:label="@string/sueno_seguidor_fragment"
+        tools:layout="@layout/fragment_sueno_seguidor">
+        <action
+            android:id="@+id/action_suenoSeguidorFragment_to_suenoCalidadFragment"
+            app:destination="@id/sueno_calidad_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sueno_calidad_fragment"
+        android:name="com.example.android.trackmysleepquality.suenocalidad.SuenoCalidadFragment"
+        android:label="@string/sueno_calidad_fragment"
+        tools:layout="@layout/fragment_sueno_calidad">
+        <argument
+            android:name="sleepNightKey"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_suenoCalidadFragment_to_suenoSeguidorFragment"
+            app:destination="@id/sueno_seguidor_fragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@+id/sueno_seguidor_fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>
